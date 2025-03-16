@@ -1,7 +1,9 @@
 {
-  "name": "tech-details-shop",
-  "version": "0.1.0",
-  "private": true,
+  "name": "phymply-web",
+  "license": "MIT",
+  "description": "This web app is official web app for Phymply",
+  "version": "0.1.0-dev",
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "next dev",

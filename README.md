@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Phymply School Website
+
+This repository contains the source code for the Phymply school website, built with React, TypeScript, and modern web technologies.
+
+## Technologies Used
+
+- **React** - Frontend library for building user interfaces
+- **TypeScript** - Strongly typed programming language that builds on JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Next.js** - React framework for server-side rendering and static site generation
+- **pnpm** - Package manager for JavaScript
+
+## Project Structure
+
+```
+src/
+├── app/             # Next.js app pages and routing
+├── components/      # Reusable UI components
+│   ├── ui/          # Basic UI elements (Logo, Navbar, etc.)
+│   └── shared/      # Shared components used across features
+├── widgets/         # Larger composite components representing sections/features
+│   └── about/       # Components related to the About section
+├── styles/          # Global styles and theme configuration
+├── utils/           # Utility functions and helpers
+└── types/           # TypeScript type definitions
+```
+
+### Structure Philosophy
+
+- **Component-Based Architecture**: The project is organized around reusable components
+- **Feature-Based Organization**: Widgets are grouped by feature/section
+- **Separation of Concerns**: UI components are separated from business logic
+- **Scalability**: Structure supports growth without becoming unwieldy
 
 ## Getting Started
 
-First, run the development server:
+0. **Install package manager:**
+   ```bash
+   npm install -g pnpm
+   ```
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/phymply-website.git
+   cd phymply-website
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Run development server:**
+   ```bash
+   pnpm run dev
+   ```
+
+4. **Open your browser:**
+   Navigate to http://localhost:3000
+
+## How to Contribute
+
+1. **Fork the repository**
+   
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make your changes and commit:**
+   ```bash
+   git commit -m "Add a descriptive commit message"
+   ```
+
+4. **Push to your fork:**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. **Create a Pull Request:**
+   - Go to the original repository
+   - Click "New Pull Request"
+   - Select your fork and the branch with your changes
+   - Add a description of your changes
+   - Submit the Pull Request
+
+## Coding Guidelines
+
+- Follow the existing code style and naming conventions
+- Use TypeScript types for all components and functions
+- Write meaningful component and variable names
+- Keep components small and focused on a single responsibility
+- Add comments for complex logic
+- Make sure all components are accessible
+
+## Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run build
+pnpm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License
