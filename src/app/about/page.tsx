@@ -6,12 +6,12 @@ import Footer from "@/components/ui/Footer";
 import BackgroundDecoration from "@/components/ui/BgDecor";
 
 export default function History() {
-  return (
-   <>
-     <Navbar/>
-    <AboutWidget/>
-       <BackgroundDecoration/>
-       <Footer/>
-   </>
-  );
+    return (
+        <>
+            <Navbar/>
+            <AboutWidget/>
+            <BackgroundDecoration/>
+            <Footer/>
+        </>
+    );
 }

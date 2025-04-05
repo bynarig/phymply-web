@@ -14,7 +14,8 @@ export default function Hero() {
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/how-to-join" className="btn btn-primary">Вимоги для вступу</Link>
-            <Link href="/teachers" className="btn btn-secondary">Для вчителів</Link>
+            <Link href="/teachers" className="btn btn-accent">Для вчителів</Link>
+            <Link href="/news" className="btn btn-secondary">Новини</Link>
           </div>
         </div>
       </div>
